@@ -1,1 +1,1 @@
-lsof -i :5000 | grep ruby | awk '{ print $2 }' | xargs kill; npm install && exec foreman start -f ../Procfile.dev
+lsof -i :5000 | grep ruby | awk '{ print $2 }' | xargs kill; npm install && exec foreman start -f ./Procfile.dev
